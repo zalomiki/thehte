@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Reelquick - Learn English with Short Videos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .video-placeholder {
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+        }
+        .word-card {
+            transition: all 0.3s ease;
+        }
+        .word-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-play-circle text-blue-500 text-3xl mr-3"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">English <span class="text-blue-500">Reelquick</span></h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="#videos" class="nav-link text-gray-600 hover:text-blue-500">Videos</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-500">About</a>
+                </nav>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Learn English Fast with <span class="text-blue-500">Short Videos</span></h2>
+                    <p class="text-lg text-gray-600 mb-8">Discover how TikTok and Instagram Reels can help you learn English in small, fun steps every day!</p>
+                    <div class="flex space-x-4">
+                        <a href="#videos" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Try Now</a>
+                        <a href="#about" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-100 rounded-full opacity-70"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-100 rounded-full opacity-70"></div>
+                        <div class="relative bg-white p-2 rounded-xl shadow-lg">
+                            <div class="video-placeholder w-full h-64 rounded-lg">
+                               <iframe width="100%" height="315" src="https://rutube.ru/play/embed/aefc063cb2dd893ffa81b5bd53566d8f" frameborder="0" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Learn with Short Videos?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Short videos make learning English easy, fun, and perfect for busy people.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-blue-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Small Time Commitment</h3>
+                    <p class="text-gray-600">Learn in just 30-60 seconds per video. Perfect for when you're busy but want to practice every day.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-laugh-beam text-yellow-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Fun and Engaging</h3>
+                    <p class="text-gray-600">Short videos are more interesting than textbooks. You'll remember words better when they're in fun situations.</p>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-green-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Learn Anywhere</h3>
+                    <p class="text-gray-600">Watch videos on your phone while waiting, traveling, or relaxing. No need for books or notebooks.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Who is this for?</h3>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-2 rounded-full mr-4">
+                            <i class="fas fa-user-graduate text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Complete Beginners</h4>
+                            <p class="text-gray-600 text-sm">Start with simple words and phrases. Learn how to say hello, order food, and ask for directions.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-2 rounded-full mr-4">
+                            <i class="fas fa-user-tie text-purple-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Busy Professionals</h4>
+                            <p class="text-gray-600 text-sm">Improve your business English in small steps during your lunch break or commute.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-4">
+                            <i class="fas fa-globe-americas text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Travelers</h4>
+                            <p class="text-gray-600 text-sm">Learn useful phrases for hotels, restaurants, and shopping before your trip.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded-full mr-4">
+                            <i class="fas fa-child text-green-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Students</h4>
+                            <p class="text-gray-600 text-sm">Make learning English more fun than textbooks. Great for extra practice outside class.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Collection Section -->
+    <section id="videos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Practice with These Videos</h2>
+                <p class="text-lg text-gray-600">Watch, learn, and repeat! Each video comes with translation and new words.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <iframe width="100%" height="315" src="https://rutube.ru/play/embed/d81d72971aaa71d04ff70a7aa9fa52c2" frameborder="0" allowfullscreen></iframe>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800"> Tell me about yourself</h3>
+                                <p class="text-sm text-gray-500">Beginner • 52 sec</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Career</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-700 mb-2">Translation:</h4>
+                            <p class="text-gray-600 bg-gray-50 p-3 rounded">"Спасибо за возможность! Я мотивированный человек, люблю учиться, умею решать проблемы и адаптироваться. Думаю, что принесу пользу команде!"</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-2">New Words:</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="word-card bg-blue-50 p-3 rounded-lg">
+                                    <p class="font-medium text-blue-700">Opportunity</p>
+                                    <p class="text-sm text-gray-600">возможность</p>
+                                </div>
+                                <div class="word-card bg-blue-50 p-3 rounded-lg">
+                                    <p class="font-medium text-blue-700">Motivated</p>
+                                    <p class="text-sm text-gray-600">мотивированный</p>
+                                </div>
+                                <div class="word-card bg-blue-50 p-3 rounded-lg">
+                                    <p class="font-medium text-blue-700">Collaborative</p>
+                                    <p class="text-sm text-gray-600">командный</p>
+                                </div>
+                                <div class="word-card bg-blue-50 p-3 rounded-lg">
+                                    <p class="font-medium text-blue-700">Skill set</p>
+                                    <p class="text-sm text-gray-600">набор навыков</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <iframe width="100%" height="315" src="https://rutube.ru/play/embed/9bb4de8651630183856584183f892676" frameborder="0" allowfullscreen></iframe>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800"> Pharmacy English — Prescription or Recipe?</h3>
+                                <p class="text-sm text-gray-500">Beginner • 38 sec</p>
+                            </div>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Health</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-700 mb-2">Translation:</h4>
+                            <p class="text-gray-600 bg-gray-50 p-3 rounded">"Мне нужно лекарство... У вас есть рецепт? Рецепт — это про еду, милый. Я не могу продать без рецепта. Можно взять что-то без него — это называется over the counter"</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-2">New Words:</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="word-card bg-yellow-50 p-3 rounded-lg">
+                                    <p class="font-medium text-yellow-700">Prescription</p>
+                                    <p class="text-sm text-gray-600">рецепт(медицинский)</p>
+                                </div>
+                                <div class="word-card bg-yellow-50 p-3 rounded-lg">
+                                    <p class="font-medium text-yellow-700">Over the counter</p>
+                                    <p class="text-sm text-gray-600">без рецепта</p>
+                                </div>
+                                <div class="word-card bg-yellow-50 p-3 rounded-lg">
+                                    <p class="font-medium text-yellow-700">Receipt</p>
+                                    <p class="text-sm text-gray-600">чек</p>
+                                </div>
+                                <div class="word-card bg-yellow-50 p-3 rounded-lg">
+                                    <p class="font-medium text-yellow-700">Medicine</p>
+                                    <p class="text-sm text-gray-600">лекарство</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                   <iframe width="100%" height="315" src="https://rutube.ru/play/embed/32ad3f19aa057529725094472f5c0254" frameborder="0" allowfullscreen></iframe>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Using “though” in English</h3>
+                                <p class="text-sm text-gray-500">Beginner • 1 min</p>
+                            </div>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Grammar</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-700 mb-2">Translation:</h4>
+                            <p class="text-gray-600 bg-gray-50 p-3 rounded">"Это хорошая книга, но дорогая. Мне не нравится цвет, though. У меня нет воды, though."
+→ though = "хотя", "но всё же" (в конце фразы)</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-2">New Words:</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="word-card bg-green-50 p-3 rounded-lg">
+                                    <p class="font-medium text-green-700">Though</p>
+                                    <p class="text-sm text-gray-600">хотя, но всё же</p>
+                                </div>
+                                <div class="word-card bg-green-50 p-3 rounded-lg">
+                                    <p class="font-medium text-green-700">Expensive</p>
+                                    <p class="text-sm text-gray-600">дорогой</p>
+                                </div>
+                                <div class="word-card bg-green-50 p-3 rounded-lg">
+                                    <p class="font-medium text-green-700">Don't like</p>
+                                    <p class="text-sm text-gray-600">не нравится</p>
+                                </div>
+                                <div class="word-card bg-green-50 p-3 rounded-lg">
+                                    <p class="font-medium text-green-700">Expensive though</p>
+                                    <p class="text-sm text-gray-600">хотя дорого</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <iframe width="100%" height="315" src="https://rutube.ru/play/embed/aefc063cb2dd893ffa81b5bd53566d8f" frameborder="0" allowfullscreen></iframe>
+
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">What’s That Paper Called in English?</h3>
+                                <p class="text-sm text-gray-500">Beginner • 45 sec</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Household</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-700 mb-2">Translation:</h4>
+                            <p class="text-gray-600 bg-gray-50 p-3 rounded">"Мне нужна бумага на кухню — кухонное полотенце. А ещё для духовки — пергаментная. Алюминиевая? Фольга. Пластиковая? Плёнка. Спасибо!"</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-2">New Words:</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="word-card bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-medium text-purple-700">Paper towels</p>
+                                    <p class="text-sm text-gray-600">бумажные полотенца</p>
+                                </div>
+                                <div class="word-card bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-medium text-purple-700">Parchment paper</p>
+                                    <p class="text-sm text-gray-600">пергамент</p>
+                                </div>
+                                <div class="word-card bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-medium text-purple-700">Aluminium foil</p>
+                                    <p class="text-sm text-gray-600">фольга</p>
+                                </div>
+                                <div class="word-card bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-medium text-purple-700">Cling film</p>
+                                    <p class="text-sm text-gray-600">пищевая пленка</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                    Load More Videos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">How to Learn Best</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Simple tips to make your learning more effective</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-indigo-50 rounded-xl p-8 mb-8">
+                    <div class="flex items-start">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-6">
+                            <i class="fas fa-redo-alt text-indigo-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Repeat After the Video</h3>
+                            <p class="text-gray-600">When you hear new words, say them out loud. Try to copy how the person speaks. Do this 2-3 times for each video.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 rounded-xl p-8 mb-8">
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-6">
+                            <i class="fas fa-bookmark text-pink-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Save Favorite Videos</h3>
+                            <p class="text-gray-600">Make a collection of videos you like. Watch them again later to remember better. Try to watch your favorites 3 times over a week.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-teal-50 rounded-xl p-8">
+                    <div class="flex items-start">
+                        <div class="bg-teal-100 p-3 rounded-full mr-6">
+                            <i class="fas fa-comments text-teal-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Use the Words Soon</h3>
+                            <p class="text-gray-600">After learning new words, try to use them the same day. Say them to yourself, write them in a message, or tell a friend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Learn English the Fun Way?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Start with just 5 minutes a day and see your English improve!</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#videos" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Try Free Videos</a>
+                <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:bg-opacity-10 px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Get Learning Tips</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        // Simple script for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
